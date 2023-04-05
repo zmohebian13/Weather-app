@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #343d4b;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+.container {
+  display: flex;
+  width: 50%;
+  height: 400px;
+  background-color: #222831;
+  border-radius: 30px;
+  margin: 30px auto;
+}
+
+.weather-side {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background-color: aqua;
+  border-radius: 30px;
+  background-image: url("https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2VhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-position: top;
+  transition: all 200ms linear;
+}
+
+.weather-side:hover {
+  transform: scale(1.02);
+}
+
+.weather-gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(59, 171, 237);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 171, 237, 1) 0%,
+    rgba(148, 206, 233, 1) 100%
+  );
+  border-radius: 30px;
+  opacity: 0.4;
+}
+
+.data-container {
+  color: white;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.current-day {
+  margin: 2px 0;
+}
+
+.current-date {
+  margin: 2px 0;
+}
+
+.location-icon {
+  font-size: 15px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.current-city {
+  display: inline-block;
+}
+
+.weather-container {
+  position: absolute;
+  bottom: 50px;
+  left: 25px;
+  color: white;
+}
+
+.current-temp {
+  font-size: 70px;
+  margin: 4px 0;
+  font-weight: 700;
+}
+
+.celcius,
+.farenhite,
+.divider {
+  font-size: 30px;
+}
+.weather-desc {
+  margin: 0;
+}
+
+.sun-icon {
+  font-size: 50px;
+}
+
+.info-side {
+  position: relative;
+  float: left;
+  height: 100%;
+  padding-top: 25px;
+}
+
+.today-info-container {
+  padding: 15px;
+  margin: 0 0 26px 39px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  width: 80%;
+}
+
+.today-info div {
+  padding: 3px;
+}
+
+.today-info div .value {
+  float: right;
+  font-weight: 100;
+}
+
+.week-info-container {
+  border-radius: 10px;
+}
+
+.week-list {
+  list-style-type: none;
+  margin: 10px 19px 5px;
+  border-radius: 10px;
+  background-color: #212429;
+}
+
+.week-list li {
+  text-align: center;
+  float: left;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: aliceblue;
+  transition: all 200ms linear;
+  margin: 0 1px;
+}
+
+.week-list li:hover {
+  transform: scale(1.03);
+  background-color: aliceblue;
+  color: #222831;
+}
+
+.week-list li span {
+  display: block;
+  margin: 10px 10px;
+}
+
+.week-list .active {
+  background-color: aliceblue;
+  color: #222831;
+  font-weight: bold;
+}
+
+.week-list li .day-name {
+  font-weight: 100;
+}
+
+.week-list li .day-temp {
+  font-weight: 700;
+}
+
+.day-icon {
+  font-size: 30px;
+}
+
+.search-section {
+  width: 50%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  font-family: "Montserrat";
+  color: aliceblue;
+  margin: 40px 0 40px 60px;
+  background: linear-gradient(
+    90deg,
+    rgba(59, 171, 237, 1) 0%,
+    rgba(148, 206, 233, 1) 100%
+  );
+  font-weight: bold;
+  padding: 0 20px;
+  display: inline;
+}
+
+.search-btn {
+  display: inline;
+  position: relative;
+  bottom: 77px;
+  left: 316px;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  background: linear-gradient(
+    90deg,
+    rgba(59, 171, 237, 1) 0%,
+    rgba(148, 206, 233, 1) 100%
+  );
+  width: 20%;
+  color: aliceblue;
+}
+
+.weather-container a {
+  text-decoration: none;
+  cursor: pointer;
+  color: aliceblue;
+}

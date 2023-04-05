@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-side">
+        <div class="weather-gradient"></div>
+        <div class="data-container">
+          <h2 class="current-day-time">Tuesday 16:00</h2>
+          <p class="current-date">15 Jan 2019</p>
+          <i class="fa-solid fa-location-dot location-icon"></i>
+          <p class="current-city">Paris, FR</p>
+        </div>
+        <div class="weather-container">
+          <i class="fa-regular fa-sun sun-icon"></i>
+          <h1 class="current-temp">
+            <span class="current-tempreture">19</span>
+            <a href="#" class="celcius-link"><span class="celcius">°C</span></a><span class="divider"> | </span> <a href="" class="farenhite-link"><span class="farenhite">°F</span></a>
+          </h1>
+          <h3 class="weather-desc">Sunny</h3>
+        </div>
+      </div>
+      <div class="info-side">
+        <div class="today-info-container">
+          <div class="today-info">
+            <div class="precipitation">
+              <span class="title">PRECIPITATION</span>
+              <span class="value">0 %</span>
+            </div>
+            <div class="humidity">
+              <span class="title">HUMIDITY</span>
+              <span class="value">34 %</span>
+            </div>
+            <div class="wind">
+              <span class="title">WIND</span>
+              <span class="value">0 km/h</span>
+            </div>
+          </div>
+        </div>
+        <div class="week-info-container">
+          <div class="week-info">
+            <ul class="week-list">
+              <li class="active">
+                <i class="fa-regular fa-sun day-icon"></i>
+                <span class="day-name">Tue</span>
+                <span class="day-temp">21°C</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-cloud-sun day-icon"></i>
+                <span class="day-name">Wed</span>
+                <span class="day-temp">18°C</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-cloud-showers-heavy day-icon"></i>
+                <span class="day-name">Fry</span>
+                <span class="day-temp">20°C</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-cloud-sun-rain day-icon"></i>
+                <span class="day-name">Tue</span>
+                <span class="day-temp">29°C</span>
+                </span>
+              </li>
+            </ul>
+            <div class="change-city">
+              <form action="">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Type a city ..."
+                    class="search-section"
+                  />
+                </div>
+                <div>
+                  <input type="submit" value="search" class="search-btn" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/15d57b21e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
